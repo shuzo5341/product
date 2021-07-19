@@ -1,0 +1,14 @@
+<h1>product</h1> 
+<h3>つぶやき</h3> 
+<%= form_for @post do |f| %> 
+  <div class="field"> 
+    <%= f.label :content %> 
+    <%= f.text_field :content, :size => 140 %> 
+  </div> 
+  <div class="image"> 
+    <%= f.label :image %> 
+    <%= f.file_field :image %> 
+  </div> 
+  <%= f.submit "投稿する" %> 
+<% end %> 
+<%= link_to "投稿一覧に戻る", posts_path %> 

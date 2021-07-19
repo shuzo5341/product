@@ -1,0 +1,7 @@
+<%= form_for @post do |f| %>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.label :content %>
+  <%= f.text_field :content, :size => 140 %> 
+  <%= f.submit "編集する" %>
+<% end %>
